@@ -1,0 +1,137 @@
+
+.posts-manage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base-padding);
+
+    &__search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--base-padding);
+
+        input {
+            width: 300px;
+
+            background-color: var(--gray);
+            color: var(--default-text-white);
+
+            padding: var(--small-padding) var(--base-padding);
+            border-radius: 20px;
+
+            &::placeholder { color: inherit; }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--base-padding);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 16%;
+
+        padding: var(--base-padding);
+
+        color: var(--text-primary);
+        background-color: var(--bg-color);
+
+        border-radius: var(--block-border);
+        overflow: hidden;
+    }
+
+    &__section {
+        flex: 1; 
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: var(--base-padding);
+
+        font-weight: var(--font-weight-bold);
+
+        // &:last-child {
+        //     flex: 0;
+        //     justify-content: flex-end;
+        // }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: var(--small-padding);
+
+        button {
+            padding: 5px;
+            border-radius: 5px;
+            background-color: var(--secondary);
+            cursor: pointer;
+        }
+    }
+
+    &__title {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    &__preview {
+        border-radius: var(--block-border);
+        width: 70px;
+        height: 40px;
+
+        background-color: var(--secondary);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__date, &__id, &__views {
+        color: var(--gray);
+        font-size: var(--small-font);
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: var(--small-padding);
+
+        svg { fill: var(--gray); }
+    }
+
+    @media screen and (max-width: 500px) {
+        &__item {
+            flex-direction: column;
+            gap: var(--base-padding);
+        }
+
+        &__section {
+            width: 100%;
+        }
+
+        &__preview {
+            width: 100px;
+            height: 60px;
+        }
+
+        &__title {
+            justify-content: end;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        &__search {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

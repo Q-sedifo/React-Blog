@@ -1,0 +1,36 @@
+
+.post-form {
+    max-width: 600px;
+
+    #preview {
+        display: none;
+    }
+
+    &__preview-section {
+        display: flex;
+        gap: var(--base-padding);
+    }
+
+    &__preview {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: var(--gray);
+
+        padding: var(--base-padding);
+        height: 100px;
+        width: 100%;
+
+        border-radius: var(--block-border);
+        border: 1px dashed var(--gray);
+
+        cursor: pointer;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        svg { fill: var(--gray); }
+    }
+}

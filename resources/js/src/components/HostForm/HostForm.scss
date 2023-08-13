@@ -1,0 +1,54 @@
+
+.host-form {
+    max-width: 800px;
+
+    #avatar, #background {
+        display: none;
+    }
+
+    &__image-field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        width: 150px;
+        height: 150px;
+        border: 1px dashed var(--gray);
+        border-radius: var(--block-border);
+        color: var(--gray);
+        cursor: pointer;
+
+        svg { fill: var(--gray); }
+    }
+
+    &__avatar, &__background, &__image-field {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    &__background {
+        flex: 1;
+    }
+
+    @media screen and (max-width: 500px) {
+        &__image-field {
+            width: 100px;
+            height: 100px;
+        }
+
+        &__avatar {
+            width: 100px;
+        }
+
+        &__background, &__avatar {
+            height: 100px;
+        }
+    }
+}

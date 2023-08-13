@@ -1,0 +1,117 @@
+
+.post-comments {
+    display: flex;
+    flex-direction: column;
+    gap: var(--base-padding);
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--base-padding);
+    }
+
+    &__item {
+        border-radius: 16px;
+        background-color: var(--bg-color);
+
+        padding: var(--base-padding);
+    }
+}
+
+.post-comment {
+    display: flex;
+    flex-direction: column;
+    gap: var(--middle-padding);
+
+    &__name, &__content, &__info {
+        font-size: var(--small-font);
+    }
+
+    &__name {
+        font-weight: var(--font-weight-bold);
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: var(--middle-padding);
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+        background-color: var(--secondary);
+        overflow: hidden;
+    }
+
+    &__content, &__info {
+        color: var(--gray);
+    }
+}
+
+.comment-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--base-padding);
+
+    &__name {
+        color: var(--text-primary);
+        padding: var(--middle-padding);
+        background-color: var(--bg-color);
+        border-radius: var(--base-padding);
+
+        width: 300px;
+    }
+
+    &__content {
+        padding: var(--middle-padding);
+        background: none;
+        border-bottom: 1px solid var(--gray);
+        color: var(--text-primary);
+
+        transition: .1s;
+
+        resize: none;
+        overflow-y: hidden;
+
+        &:focus {
+            border-color: var(--secondary);
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: var(--base-padding);
+
+    }
+
+    button {
+        width: fit-content;
+        padding: var(--middle-padding);
+        border-radius: 10px;
+        background-color: var(--secondary);
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 900px) {
+        &__name {
+            width: 100%;
+        }
+
+        &__actions {
+            justify-content: space-between;
+        }
+    }
+}
