@@ -4,7 +4,7 @@ ___
 [-> Deployed project](http://deprog.zzz.com.ua/)
 [-> Video review](https://www.youtube.com/watch?v=4nQzi1nSuxI&t=33s&ab_channel=DeProg)
 
-**Short description**
+**Short description**  
 This project is a personal blog created to share news or ideas with other people and friends. Its advantage is the design that is maximally adapted to any device, including mobile. It can be run in a browser or installed as a pwa application. The project contains all the necessary functions for publishing news and posts, and of course users can rate them by writing their comments. It is also possible to change the color of the theme from light to dark depending on the preferences of the visitor.
 
 
