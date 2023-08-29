@@ -1,7 +1,7 @@
 # React Blog application
 ___
 
-[-> Deployed project](http://deprog.zzz.com.ua/)
+[-> Deployed project](http://deprog.zzz.com.ua/)  
 [-> Video review](https://www.youtube.com/watch?v=4nQzi1nSuxI&t=33s&ab_channel=DeProg)
 
 **Short description**  
